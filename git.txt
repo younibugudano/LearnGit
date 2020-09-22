@@ -1,0 +1,8 @@
+mkdir filename  -- 创建文件夹
+cd /d           --进入d盘
+
+git init 		--把这个目录变成git可以管理的仓库
+git add readme.txt 把文件添加到仓库
+git commit -m "add a readme filename"  把文件提交到仓库
+git status  查看结果，时刻掌握仓库当前状态
+git diff 
