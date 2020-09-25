@@ -1,25 +1,76 @@
-mkdir filename  						创建文件夹
-cd /d           						进入d盘
+mkdir filename  						
+创建文件夹
 
-git init 								把这个目录变成git可以管理的仓库
-git add readme.txt 						把文件添加到仓库
-git commit -m "add a readme filename"   把文件提交到仓库
-git status  							查看结果，时刻掌握仓库当前状态
-git diff   								查看修改
-git log									显示从最近到最远的提交日志
-git log --pretty=oneline				显示log，以一行一行的形式
-git log readme.txt						显示此文档的log
-git reset --hard HEAD^					回退到上一个版本
-git reset --hard 版本号					回退到特定版本
-git reflog								记录所有的版本号
-git checkout --readme.txt 				丢掉工作区的修改
-git reset HEAD readme.txt				回退到工作区，保存修改
-git rm readme.txt						删除文件(需要git commit -m "info" 提交)
+cd /d           						
+进入d盘
+
+git init 								
+把这个目录变成git可以管理的仓库
+
+git add readme.txt 						
+把文件添加到仓库
+
+git commit -m "add a readme filename"   
+把文件提交到仓库
+
+git status  							
+查看结果，时刻掌握仓库当前状态
+
+git diff   								
+查看修改
+
+git log							
+显示从最近到最远的提交日志
+
+git log --pretty=oneline				
+显示log，以一行一行的形式
+
+git log readme.txt						
+显示此文档的log
+
+git reset --hard HEAD^					
+回退到上一个版本
+
+git reset --hard 版本号					
+回退到特定版本
+
+git reflog								
+记录所有的版本号
+
+git checkout --readme.txt 				
+丢掉工作区的修改
+
+git reset HEAD readme.txt				
+回退到工作区，保存修改
+
+git rm readme.txt						
+删除文件(需要git commit -m "info" 提交)
 
 ssh-keygen -t rsa -C "834391931@qq.com" 创建一个本地仓库的SSH 密钥
 
-登录Github 在
+登录Github 
 git remote add origin git@github.com:younibugudano/LearnGit.git
 
-git remote -v							查看添加了哪些远程remote
-git remote remove origin				删除添加的远程remote
+git remote -v							
+查看添加了哪些远程remote
+
+git remote remove origin				
+删除添加的远程remote
+
+git clone git@github.com:michaelliao/gitskills.git    
+从远程克隆代码
+
+git checkout -b dev		
+创建分支并切换
+
+git	branch 	
+查看当前分支
+
+git	checkout master 
+切换回master分支
+
+git merge dev	
+合并指定分支到当前分支
+
+git push -u origin master  
+把仓库代码push至远程仓库
