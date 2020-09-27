@@ -98,4 +98,11 @@ git	status
 git	add readme.txt
 git commit -m "info";
 
+7.git log 
+查看分支的合并情况
 
+8.git branch -d feature1
+删除feature1分支
+
+git	log	 --graph
+查看分支合并图
