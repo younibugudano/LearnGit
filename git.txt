@@ -66,7 +66,7 @@ git checkout -b dev
 git	branch 	
 查看当前分支
 
-git	checkout master 
+git checkout master 
 切换回master分支
 
 git merge dev	
@@ -74,3 +74,28 @@ git merge dev
 
 git push -u origin master  
 把仓库代码push至远程仓库
+
+解决冲突时步骤:
+1.git switch -c feature1
+切换至分支feature1
+
+2.git add readme.txt
+  git commit -m "Inof"
+修改好后在feature1分支上提交
+
+3.git switch master
+切换回master分支
+
+4.git add readme.txt
+  git commit -m "Master commit"
+在master 分支上提交
+
+5.git merge feature1 
+会提示readme.txt 文件存在冲突
+git	status
+
+6.手动修改后在master分支上
+git	add readme.txt
+git commit -m "info";
+
+
